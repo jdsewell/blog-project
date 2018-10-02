@@ -1,3 +1,4 @@
+<div id="comment_form">
 <%= form_with(model: comment, local: true) do |form| %>
   <% if comment.errors.any? %>
     <div id="error_explanation">
@@ -10,21 +11,22 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
-    <%= form.label :author %>
-    <%= form.text_field :author %>
+    <div class="col-xs-3"><%= form.label :author %></div>
+    <div class="col-xs-9"><%= form.text_field :author %></div>
   </div>
 
   <div class="field">
-    <%= form.label :comment_entry %>
-    <%= form.text_area :comment_entry %>
+    <div class="col-xs-3"><%= form.label :comment_entry %></div>
+    <div class="col-xs-9"><%= form.text_area :comment_entry %></div>
   </div>
   <div class="field">
     <%= form.hidden_field :post_id, value: @post.id %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <center><%= form.submit %></center>
   </div>
+
 <% end %>
+</div>
