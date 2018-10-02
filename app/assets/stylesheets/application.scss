@@ -16,3 +16,56 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+.post {
+	background-color: rgb(50,50,50);
+	color: rgb(200,200,200);
+	padding: 2%;
+	margin-bottom:1%;
+	margin-top: 1%;
+	text-align: left;
+}
+.container {
+	background-color: rgb(255,50,50);
+	text-align: center;
+}
+.jumbotron {
+	margin-left: 8%;
+	margin-right: 8%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: rgb(255,255,80);
+}
+.comment {
+	color: white;
+	background-color: black;
+	padding: 2%;
+}
+#comments {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.wallpaper {
+	background-color: rgb(50,50,50);
+	margin-bottom: 0%;
+	color: rgb(200,200,200)
+}
+.author_name {
+	padding-top: 5%;
+	padding-bottom:5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 150%;
+}
+.option {
+	padding-top: 10%;
+	padding-bottom:10%;
+}
+h1 {
+	color: white;
+}
+#comment_form {
+	background-color: rgb(200,200,200);
+	color: rgb(50,50,50);
+	padding: 2%;
+	margin-top: 1%;
+}
