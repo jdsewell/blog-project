@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
   resources :comments
   resources :posts
-  get 'index' => 'practice#index'
-  get 'about' => 'practice#about'
-  post 'index' => 'practice#about'
-  root 'practice#index'
+  get 'index' => 'posts#index'
+  get 'about' => 'posts#about'
+  root 'posts#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

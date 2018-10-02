@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Posts</h1>
-<div class="jumbotron">
+<!-- <div class="jumbotron">
 <div class="container">
 <table>
   <thead>
@@ -15,18 +15,49 @@
   <tbody>
     <% @posts.each do |post| %>
       <tr>
-        <td><%= post.author %></td>
-        <td><%= post.blog_entry %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="post"><%= post.author %></td>
+        <td class="post"><%= post.blog_entry %></td>
+        <td class="btn btn-default"><%= link_to 'Show', post %></td>
+        <td class="btn btn-default"><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td class="btn btn-default"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+<%= link_to 'New Post', new_post_path %>
 </div>
+</div>
+
+<br> -->
+<div class="jumbotron">
+
+  <div class="container">
+    <div class="col-xs-3">
+      <h4>Author</h4>
+    </div>
+    <div class="col-xs-6">
+      <h4>Blog Post</h4>
+    </div>
+    <div class="col-xs-3">
+      <h4>Options</h4>
+    </div>
+  </div>
+  <% @posts.each do |post| %>
+    <div class="container">
+      <div class="col-xs-3"><%= post.author %></div>
+      <div class="col-xs-6"><%= post.blog_entry %></div>
+      <div class="col-xs-3">
+        <%= link_to 'Show', post %>
+        <%= link_to 'Edit', edit_post_path(post) %>
+        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  <% end %>
+
+
+<%= link_to 'New Post', new_post_path %>
+
 </div>
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
