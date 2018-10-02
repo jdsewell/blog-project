@@ -1,0 +1,12 @@
+<style>
+	.block {
+		background-color: <%= @color %>;
+	}
+
+</style>
+
+<h1 class="block">You picked <%= @color %></h1>
+<%= form_tag index_path do %>
+	<p><%= text_field_tag :name, nil, placeholder: "What is your name?"%></p>
+	<p><%= submit_tag :submit %></p>
+<% end %>
