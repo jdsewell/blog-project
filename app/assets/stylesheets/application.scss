@@ -23,10 +23,13 @@
 	margin-bottom:1%;
 	margin-top: 1%;
 	text-align: left;
+	border-radius: 10px;
 }
 .container {
-	background-color: rgb(255,50,50);
+	background-color: rgb(200,200,200);
 	text-align: center;
+	border-radius: 10px;
+	margin-top: 1%;
 }
 .jumbotron {
 	margin-left: 8%;
@@ -36,13 +39,15 @@
 	background-color: rgb(100,100,100);
 	color: black;
 	margin-top: 50px;
+	border-radius: 10px;
 }
 .comment {
-	background-color: rgb(200,200,200);
-	color: rgb(50,50,50);
+	background-color: rgb(50,50,50);
+	color: rgb(200,200,200);
 	padding: 2%;
 	text-align: left;
-	margin-top: 1%;
+	// margin-top: 1%;
+	border-top: 5px solid rgb(200,200,200);
 }
 #comments {
 	margin-left: 20%;
@@ -66,10 +71,11 @@
 }
 
 #comment_form {
-	background-color: rgb(200,200,200);
-	color: rgb(50,50,50);
+	background-color: rgb(50,50,50);
+	color: rgb(200,200,200);
 	padding: 2%;
 	margin-top: 1%;
+	// border-radius: 10px;
 }
 .head {
 	background-color: rgb(100,100,100);
@@ -93,3 +99,11 @@ body {
 // .text_area {
 // 	width: 500px;
 // }
+// .user_link {
+// 	background-color: white;
+// 	color: black;
+// }
+.pagination {
+	background-color: rgb(200,200,200);
+	color: rgb(50,50,50);
+}

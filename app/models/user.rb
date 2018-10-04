@@ -8,4 +8,8 @@ class User < ApplicationRecord
     has_many :comments
 
     mount_uploader :avatar, AvatarUploader
+    def display
+    	@user = User.all
+    	return @user.username
+    end
 end
