@@ -7,6 +7,10 @@ class PostsController < ApplicationController
     @posts = Post.all.page(params[:page])
   end
 
+  def user_posts
+    @user = User.find_by(username: params[:name])
+  end
+
   # GET /posts/1
   # GET /posts/1.json
   def show

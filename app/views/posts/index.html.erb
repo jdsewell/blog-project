@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 
-<div class="jumbotron">
+
   <p>Logged in as: <b><%= current_user.username %></b></p>
   <center><h1>Posts</h1></center>
 
@@ -18,7 +18,7 @@
   </div>
   <% @posts.each do |post| %>
     <div class="container">
-      <div class="col-xs-2 author_name"><span><%= post.user.username %></span></div>
+      <div class="col-xs-2 author_name"><span><%= link_to post.user.username, user_posts_path(name: post.user.username) %></span></div>
         <div class="col-xs-10 post"><%= post.blog_entry.html_safe %></div>
         <div class="col-xs-2"></div>
         <div class="col-xs-10">
@@ -33,8 +33,8 @@
 
 
 
- <%= paginate @posts %>
-</div>
+ <span class="well"><%= paginate @posts %></span>
+
 
 <br>
 

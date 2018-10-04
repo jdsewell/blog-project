@@ -1,0 +1,8 @@
+<h1>All Posts by <%= @user.username %></h1>
+
+<% @user.posts.each do |post| %>
+	<div class="well">
+		<%= @user.username %> said ... <br>
+		<%= post.blog_entry.html_safe %>
+	</div>
+<% end %>

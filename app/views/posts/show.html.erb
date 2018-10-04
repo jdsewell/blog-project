@@ -1,11 +1,10 @@
-<div class="wallpaper">
-<div class="jumbotron">
+
 	<p id="notice"><%= notice %></p>
 	<div class="container">
 	<div class="post">
 	<p>
 		<strong>Author:</strong>
-		<%= @post.user.username %>
+		<%= link_to @post.user.username, user_posts_path(name: @post.user.username) %>
 	</p>
 
 	<p>
@@ -23,12 +22,10 @@
 		<div class="col-xs-12"><br></div>
 		
 		<% @post.comments.each do |comment| %>
-			<div class="comment"><%= comment.user.username %><br>
+			<div class="comment"><%= link_to comment.user.username, user_posts_path(name: comment.user.username) %><br>
 			<%= comment.comment_entry %></div>
 		<% end %>
 		
 	</div>
-	<div class="btn btn-default"><%= link_to 'Back', posts_path %></div>
+	<div><%= link_to 'Back', posts_path, class: "btn btn-default" %></div>
 	</div>
-</div>
-</div>
