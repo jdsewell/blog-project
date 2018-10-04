@@ -5,12 +5,12 @@
 	<div class="post">
 	<p>
 		<strong>Author:</strong>
-		<%= @post.author %>
+		<%= @post.user.username %>
 	</p>
 
 	<p>
 		<strong>Blog entry:</strong>
-		<%= @post.blog_entry %>
+		<%= @post.blog_entry.html_safe %>
 	</p>
 	<div><%=  link_to 'Edit', edit_post_path(@post) %></div>
 	</div>
@@ -20,11 +20,11 @@
 		<div>
 			<%= render 'comments/form', comment: @comment %>
 		</div>
-		<div class="col-xs-12"></div>
+		<div class="col-xs-12"><br></div>
 		
 		<% @post.comments.each do |comment| %>
-			<%= comment.author %><br>
-			<div class="comment"><%= comment.comment_entry %></div>
+			<div class="comment"><%= comment.user.username %><br>
+			<%= comment.comment_entry %></div>
 		<% end %>
 		
 	</div>

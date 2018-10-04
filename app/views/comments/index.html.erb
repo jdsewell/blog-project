@@ -1,3 +1,4 @@
+<div class="jumbotron">
 <p id="notice"><%= notice %></p>
 
 <h1>Comments</h1>
@@ -14,7 +15,7 @@
   <tbody>
     <% @comments.each do |comment| %>
       <tr>
-        <td><%= comment.author %></td>
+        <td><%= comment.username %></td>
         <td><%= comment.comment_entry %></td>
         <td><%= link_to 'Show', comment %></td>
         <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
@@ -27,3 +28,4 @@
 <br>
 
 <%= link_to 'New Comment', new_comment_path %>
+</div>

@@ -34,11 +34,15 @@
 	padding-left: 5%;
 	padding-right: 5%;
 	background-color: rgb(255,255,80);
+	color: black;
+	margin-top: 50px;
 }
 .comment {
-	color: white;
-	background-color: black;
+	background-color: rgb(200,200,200);
+	color: rgb(50,50,50);
 	padding: 2%;
+	text-align: left;
+	margin-top: 1%;
 }
 #comments {
 	margin-left: 20%;
@@ -57,15 +61,29 @@
 	font-size: 150%;
 }
 .option {
-	padding-top: 10%;
-	padding-bottom:10%;
+	font-size: 100%;
+	height: 75%;
 }
-h1 {
-	color: white;
-}
+
 #comment_form {
 	background-color: rgb(200,200,200);
 	color: rgb(50,50,50);
 	padding: 2%;
 	margin-top: 1%;
 }
+.head {
+	background-color: rgb(100,100,100);
+	height: 10px;
+}
+.btn {
+	background-color: rgb(200,200,200);
+}
+ul {
+	list-style: none;
+}
+body {
+	margin-top: 8%;
+}
+// .text_area {
+// 	width: 500px;
+// }
