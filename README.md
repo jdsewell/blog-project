@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple blog application that is built with ruby on rails. Users can create profiles, make posts, and create comments on posts.
 
-Things you may want to cover:
+* Ruby version 2.6.0
 
-* Ruby version
+* Ruby and rails must be installed on the host system.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Navigate to the program directory and migrate the database with "rails db:migrate".Then start the server with "rails s".
